@@ -1,56 +1,65 @@
 #pagetop{
-  background-color: rgb(195,60,111);
+  background-color: rgb(198,157,210);
   font-size: 36px;
   font-family: PP Neue World,serif;
   margin-left: 20px;
   margin-right: 20px;
+  border:solid white; 5px;
 }
 
 .main{
-  background-color: rgb(244,244,244);
+  background-color: rgb(205,190,255);
   font-family: PP Neue World,serif;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #footer{
-background-color: rgb(195,60,111);
+background-color: rgb(198,157,210);
 margin-left:20px;
 margin-right:20px;
 }
 
 .sectiondivide{
-background-color:rgb(46,22,57);
+background-color:rgb(198,157,210);
+border:solid white 5px;
+margin-left: 20px;
+margin-right:20px;
+margin-top: 20px;
 }
 
 body{
-  background-color: rgb(244,244,244);
+  background-color: rgb(163,144,228);
   font-family: PP Neue World,serif;
 }
 
 h1{
   font-size: 75px;
-  color:rgb(214, 140, 57);
+  color:rgb(47, 50, 58);
   font-family: PP Neue World,serif;
   text-align: center;
-  text-shadow: 2px 2px rgb(46,22,57)
+  text-shadow: 1px 1px white;
+
 }
 
 h2{
   font-size: 50px;
-  color: rgb(46,22,57);
+  color: rgb(47, 50, 58);
   font-family: PP Neue World,serif;
   text-align: center;
-
+  text-shadow: 1px 1px white;
 
 }
 
 h3{
   font-size: 36px;
-  color:rgb(214, 140, 57);
+  color:rgb(46,22,57);
   font-family: PP Neue World,serif;
-  text-align:Left;
-  text-shadow: 1px 1px rgb(195,60,111)
+  text-align:center;
+  text-shadow: 0.5px 0.5px white;
 }
 
 h4{
@@ -62,17 +71,17 @@ h4{
 
 a:link{
   font-size:28px;
-  color: rgb(119,22,42);
+  color: rgb(65,67,97);
 }
 
 a:visited{
-  color: rgb(195,60,111);
+  color: rgb(65,67,97);
 
 }
 
 p{
   font-size: 28px;
-  color: rgb(46,22,57);
+  color: white;
   text-align: center;
 
 }
@@ -82,10 +91,19 @@ ul{
   font-size:28px;
   color: rgb(46,22,57);
   text-align: left;
+  font-weight:600;
 }
 
 img{
   width: 20vw;
-  margin-left:250px;
   margin-top:20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid white 5px
+
 }
+
+ hr {
+   border: dotted rgb(47, 50, 58) 4px;
+ }
