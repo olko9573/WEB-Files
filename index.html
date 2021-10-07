@@ -10,12 +10,19 @@
     <h2>Web • Fall 2021</h2>
     </section>
 <hr/>
+<section>
+
+<button id="myButton">Light Mode</button>
+<button id="my2ndButton">New Photo</button>
+
+</section>
+
   <section class="sectiondivide">
       <h3>  About Me </h3>
      </section>
 
   <section class="main">
-    <img src="Week4/Olivia.JPG" style="width:20vw" alt="Olivia"/>
+    <img id="morephotos" src="Week4/Olivia.JPG" style="width:20vw" alt="Olivia"/>
     <ul>
       <li> I am a marketing major and creative technology and design minor</li>
       <li> I am from Denver, Colorado</li>
@@ -48,5 +55,23 @@
   <section id="footer">
     <p><a href="#pagetop">Back to top</a></p>
     </section>
+
+  <script>
+    console.log("javascript working");
+    document.getElementById("myButton").addEventListener("click", buttonClicked);
+    function buttonClicked(){
+        document.getElementById("footer").style.backgroundColor="rgb(232,217,236)";
+        document.getElementById("pagetop").style.backgroundColor="rgb(232,217,236)";
+        alert("You are in light mode");
+      }
+
+    document.getElementById("my2ndButton").addEventListener("click", fontbuttonClicked);
+    function fontbuttonClicked(){
+      document.getElementById("morephotos").src="Week6/Beach.JPG";
+    }
+
+  </script>
+
+
   </body>
   </html>

@@ -21,6 +21,7 @@
 background-color: rgb(198,157,210);
 margin-left:20px;
 margin-right:20px;
+margin-top:20px;
 }
 
 .sectiondivide{
@@ -106,4 +107,29 @@ img{
 
  hr {
    border: dotted rgb(47, 50, 58) 4px;
+ }
+
+ button{
+   background-color:white;
+   font-family:"PP Neue World",serif;
+   color: rgb(127, 126, 255);
+   border: solid rgb(47, 50, 58) 3px;
+   font-size: 20px;
+   margin-bottom: 20px;
+   margin-left: 10vw;
+   padding-bottom: 5px;
+   padding-top: 5px;
+   font-weight: bold;
+ }
+
+ button:active{
+   background-color: rgb(90, 89, 218);
+
+
+ }
+
+ button:hover{
+   background-color: rgb(90, 89, 218);
+   border: solid rgb(72, 71, 194) 4px;
+   color: white
  }
