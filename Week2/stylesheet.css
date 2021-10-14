@@ -67,6 +67,7 @@ h4{
   color:rgb(46,22,57);
   font-family: PP Neue World,serif;
   text-align:left;
+  margin-left: 20px;
 }
 
 a:link{
@@ -81,8 +82,10 @@ a:visited{
 
 p{
   font-size: 28px;
-  color: white;
+  color: rgb(46,22,57);
   text-align: center;
+  margin-left: 20px;
+  margin: 20px;
 
 }
 
