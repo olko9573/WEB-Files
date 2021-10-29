@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <title>SelfCareSite</title>
+   <link rel="stylesheet" href="stylesheet.css">
+ </head>
+ <body>
+   <section id="pagetop">
+     <h1>Daily Dose</h1>
+   </section>
+
+  <section id="quoteofday">
+<h2 id="quotetext">Click for your quote of the day</h2>
+
+    <button id="quotebutton">Quote of the Day</button>
+
+  </section>
+
+  <section id="middlesection">
+    <button id="selfcarebutton">Self-care Ideas</button>
+    <button id="wheelofwellness">Wheel of Wellness</button>
+<img src="WheelOfWellness.PNG" alt="wow" />
+  </section>
+
+
+<section id="journal">
+  <h4> Daily Journal</h4>
+
+
+  <textarea id="dailyjournal" rows="7" cols="150">
+
+ </textarea>
+
+<button id="completejournal">Complete</button>
+</section>
+
+<section id="journalparagraph">
+
+<p id="paragraphsection"> </p>
+</section>
+
+
+
+
+
+
+  <section id="footer">
+    <p><a href="#pagetop">Back to top</a></p>
+  </section>
+
+<script>
+ const changequote = ["“Don’t waste your energy trying to change opinions … Do your thing, and don’t care if they like it.”— Tina Fey","“If you don’t love yourself, nobody will. Not only that, you won’t be good at loving anyone else. Loving starts with the self.”—Wayne Dyer","“The day you plant the seed is not the day you eat the fruit.”","“Every small positive change we make in ourselves repays us in confidence in the future.”— Alice Walker","“The most creative act you will ever undertake is the act of creating yourself.”— Deepak Chopra","“Do something nice for yourself today. Find some quiet, sit in stillness, breathe. Put your problems on pause. You deserve a break.”―Akiroq Brost","“Self-care is how you take your power back.”— Lalah Delia","“You can’t go back and change the beginning, but you can start where you are and change the ending.”— C.S. Lewis","“Be patient with yourself. Self-growth is tender; it’s holy ground. There’s no greater investment.”— Stephen Covey","“Each life is made up of mistakes and learning, waiting and growing, practicing patience and being persistent.”— Billy Graham"]
+ let quotecount=0;
+
+const changeselfcare = ["Mindfulness exercises", "Listen to a podcast", "Take a walk", "Read a new book","Go out with friends","Listen to new music","Go shopping","Go for a drive", "Call a friend", "Do a face mask", "Cook a delicious meal", "Go to yoga", "Declutter space", "Take a nap", "Light a candle", "Find a new coffee shop", "Stretch","Bake","Do a craft","Take a long shower"]
+let carecount = 0
+
+let quotebutton = document.getElementById("quotebutton");
+quotebutton.addEventListener("click",buttonClicked);
+ function buttonClicked(){
+   console.log(changequote[quotecount]);
+   document.getElementById("quotetext").innerHTML = changequote[quotecount];
+   if(quotecount>10){
+     quotecount = 0;
+   }else{
+   quotecount ++;
+   console.log("javascript working")
+}
+
+}
+let selfcarebutton = document.getElementById("selfcarebutton");
+selfcarebutton.addEventListener("click", carebuttonClicked);
+function carebuttonClicked(){
+console.log(changeselfcare[carecount]);
+selfcarebutton.innerHTML = changeselfcare[carecount];
+  if(carecount>20){
+    carecount = 0;
+  }else{
+  carecount ++;
+  console.log("javascript working")
+}
+}
+let wheelofwellness= document.getElementById("wheelofwellness");
+  wheelofwellness.addEventListener("click",wheelClicked);
+  function wheelClicked(){
+document.getElementById("wheelofwellness").style.display = 'none';
+}
+
+
+document.getElementById('completejournal').addEventListener("click",completeClicked);
+function completeClicked(){
+let dailyjournalentry= document.getElementById("dailyjournal").value;
+document.getElementById("paragraphsection").innerHTML = dailyjournalentry;
+console.log(dailyjournalentry);
+}
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
