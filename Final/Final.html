@@ -10,6 +10,11 @@
     <!-- <h1>Henri Bendel</h1>  -->
     <!-- <h2>New York</h2> -->
     </section>
+    <section id="pagenavigation">
+    <button id="historybutton">125 Years of Henri Bendel</button>
+    <button id="bendelgirls">Bendel Girls</button>
+    <button id="henrilovestheholidays">Bendel's Holidays</button>
+    </section>
 
 
 <div class="slideshow-container">
@@ -46,43 +51,18 @@
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 
-<section id="pagenavigation">
-<button id="anniverserysalebutton">125 Years of Henri Bendel</button>
-<button id="bendelgirls">Build a Mask</button>
-<button id="aboutusbutton"> About Us</button>
+<section id="pagespacer">
 </section>
 
-<!-- javascript -->
-<script>
-console.log("javascriptworking");
 
-var slideIndex = 1;
-showSlides(slideIndex);
+<section id="pageheader">
+  <h1> Celebrating 125 years of Henri Bendel <h1>
+  <!-- <h2> Take a walk down memory lane <h2> -->
+</section>
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlidesfade");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      mySlidesfade[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  mySlidesfade[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+<script src="index.js"></script>
 
-</script>
+</body>
+</html>

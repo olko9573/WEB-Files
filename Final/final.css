@@ -9,6 +9,106 @@ background: repeating-linear-gradient(
 );
 }
 
+
+h1{
+  font-size: 50px;
+  font-family: Montserrat;
+  color: #342624;
+  text-align: center;
+
+}
+
+h2{
+  font-size: 40px;
+  font-family: Montserrat;
+  color: #342624;
+  text-align: center;
+}
+
+h3{
+font-family: Esteban, Georgia, 'Times New Roman', serif;
+
+}
+
+p{
+  font-size: 20px;
+  font-family: Montserrat;
+  color: #342624;
+  text-align: center;
+}
+
+a:link{
+  font-size:20px;
+  color:#342624;
+}
+
+a:visited{
+  color: #E5E5E5;
+
+}
+
+
+
+
+#chicgirl{
+  /* background-color: #c46df9; */
+  margin-bottom: 3vh;
+  text-align: center;
+  margin-top: 3vw;
+
+}
+#quirkygirl{
+  /* background-color: #15cac8; */
+  text-align: center;
+  margin-top: 3vw;
+}
+
+
+#pageheader{
+background: #E5E5E5;
+border: solid;
+border-color: #342624;
+border-style: double;
+margin-right: 10vw;
+margin-left:10vw;
+margin-top: 3vw;
+margin-bottom: 3vw;
+height: 120px;
+padding-bottom: 15px;
+text-align: center;
+
+}
+
+#pagespacer{
+  margin-top: 4vw;
+  border-bottom:solid;
+  border-bottom-color: #342624;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  background-color: white;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+}
+
+
+button{
+  background: #342624;
+  width: 325px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  font-family: Montserrat;
+  border-style: solid;
+  border-color: #E5E5E5;
+  margin-top: 10px;
+  margin-left: 10%;
+}
+button:hover{
+  cursor:pointer;;
+}
+
+
 #logo{
   max-width: 30%;
   height: auto;
@@ -66,6 +166,37 @@ display:none;
     padding: 8px 12px;
     position: absolute;
     top: 0;
+
+}
+
+@media screen and (min-width:1000px){
+
+  .main{
+    flex-direction:column-reverse;
+    flex-wrap: nowrap;
+
+  }
+
+}
+
+@media screen and (max-width:1190px){
+  .main{
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+  }
+  button{
+    font-size: 10px;
+  }
+  h1{
+    font-size: 35px;
+  }
+
+  /* #logo{ */
+    /* display: flex; */
+
+
+  /* } */
 
     /* The dots/bullets/indicators */
 .dot {
