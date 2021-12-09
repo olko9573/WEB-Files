@@ -26,7 +26,23 @@ h2{
 }
 
 h3{
-font-family: Esteban, Georgia, 'Times New Roman', serif;
+font-family: Montserrat;
+font-size: 30px;
+text-align: center;
+
+}
+
+h4{
+  font-family: Montserrat;
+  font-size: 30px;
+  text-align: center;
+
+}
+
+
+
+#contactinformation{
+  background-color: #342624;
 
 }
 
