@@ -27,24 +27,68 @@ h2{
 
 h3{
 font-family: Montserrat;
-font-size: 30px;
+font-size: 40px;
 text-align: center;
 
 }
 
 h4{
   font-family: Montserrat;
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
+  color: #E5E5E5;
 
 }
 
+h5{
+  font-family: Georgia;
+  color: #E5E5E5;
+  text-align: center;
+  font-size: 24px;
 
+}
+
+#bendelstorefront{
+  max-width: 30%;
+  max-height: 30%;
+  margin-top: 3vw;
+  margin-bottom: 2vw;
+  border-style: double;
+  border-color: #E5E5E5;
+  border-width:thick;
+  margin-left: 34vw;
+  margin-right:40vw;
+
+
+}
 
 #contactinformation{
   background-color: #342624;
+  padding-bottom: 3vw;
+  margin-bottom: 3vw;
 
 }
+#footer{
+  background-color: #342624;
+  background: repeating-linear-gradient(
+    to right,
+    #342624,
+    #342624 10px,
+    #E5E5E5 10px,
+    #E5E5E5 20px
+  );
+padding-top: 3vw;
+padding-bottom: 1vw;
+
+  }
+}
+
+a{
+  font-family: Montserrat;
+  font-size: 16px;
+  color: #342624;
+}
+
 
 p{
   font-size: 20px;
@@ -55,7 +99,7 @@ p{
 
 a:link{
   font-size:20px;
-  color:#342624;
+  color:#E5E5E5;
 }
 
 a:visited{
@@ -105,6 +149,9 @@ text-align: center;
   margin-top: 3vw;
   margin-bottom: 3vw;
 }
+mark{
+  background-color: #E5E5E5;
+}
 
 
 button{
@@ -128,8 +175,10 @@ button:hover{
 #logo{
   max-width: 30%;
   height: auto;
-  padding-left: 573px;
-  padding-right: 573px;
+  /* padding-left: 573px; */
+  /* padding-right: 573px; */
+  padding-left: 35%;
+  padding-right: 50%;
 }
 
 /* Slideshow container */
@@ -143,12 +192,13 @@ button:hover{
 /* Hide the images by default */
 .mySlidesfade {
 display:none;
+margin-bottom: 2vw;
 }
 
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  background-color: white;
+  /* background-color: white; */
   position:absolute;
   top: 50%;
   width: auto;
@@ -166,6 +216,10 @@ display:none;
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+  left: 110%;
+}
+.prev{
+  right: 110%;
 }
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
@@ -183,6 +237,23 @@ display:none;
     position: absolute;
     top: 0;
 
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+margin-top: 2vw;
+}
+
+.active, .dot:hover {
+background-color: #342624;
 }
 
 @media screen and (min-width:1000px){
@@ -208,30 +279,19 @@ display:none;
     font-size: 35px;
   }
 
+
+}
+
   /* #logo{ */
     /* display: flex; */
 
 
   /* } */
 
-    /* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
 
-.active, .dot:hover {
-  background-color: #342624;
-}
 
 /* Fading animation */
-.fade {
+.mySlidesfade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -246,4 +306,53 @@ display:none;
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.photogridrow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  padding-bottom: 4vw;
+  margin-left: 20%;
+}
+
+/* Create four equal columns that sits next to each other */
+.photogridcolumn {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.photogridcolumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+@media screen and (max-width: 1190px){
+  .prev,.next{
+    top:100%;
+  }
+  .prev{
+    right:55%;
+  }
+  .next{
+    left:55%;
+  }
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .photogridcolumn {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .photogridcolumn {
+    flex: 100%;
+    max-width: 100%;
+  }
 }

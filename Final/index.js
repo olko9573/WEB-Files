@@ -1,5 +1,5 @@
 console.log("javascriptworking");
-
+// source:https://www.w3schools.com/howto/howto_js_slideshow.asp
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -28,3 +28,14 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+document.getElementById("historybutton").onclick = function () {
+    location.href = "#pageheader";
+};
+
+document.getElementById("bendelgirls").onclick = function () {
+    location.href = "bendelgirls.html";
+};
+document.getElementById("contactbutton").onclick = function () {
+    location.href = "contact.html";
+};
