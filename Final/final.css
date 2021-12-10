@@ -139,7 +139,7 @@ text-align: center;
 
 }
 
-#pagespacer{
+.pagespacer{
   margin-top: 4vw;
   border-bottom:solid;
   border-bottom-color: #342624;
