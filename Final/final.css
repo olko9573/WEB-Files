@@ -111,17 +111,31 @@ a:visited{
 
 
 #chicgirl{
-  /* background-color: #c46df9; */
   margin-bottom: 3vh;
   text-align: center;
   margin-top: 3vw;
 
 }
 #quirkygirl{
-  /* background-color: #15cac8; */
   text-align: center;
   margin-top: 3vw;
 }
+
+#sportygirl{
+  text-align: center;
+  margin-top: 3vw;
+}
+
+#fashionistagirl{
+  text-align: center;
+  margin-top: 3vw;
+}
+
+#glamorousgirl{
+  text-align: center;
+  margin-top: 3vw;
+}
+
 
 
 #pageheader{
